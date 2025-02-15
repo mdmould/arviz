@@ -1008,7 +1008,7 @@ def _psislw(log_weights, cutoff_ind, cutoffmin):
             # truncate smoothed values to the largest raw weight 0
             x[x > 0] = 0
     # renormalize weights
-    x -= _logsumexp(x)
+    # x -= _logsumexp(x)
 
     return x, k
 
